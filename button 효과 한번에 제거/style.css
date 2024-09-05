@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.buttons {
+  display: flex;
+  border: 1px solid orangered;
+  padding: 50px;
+  gap: 30px;
+  color: darkcyan;
+  font-family: "Protest Guerrilla";
+  font-size: 50px;
+}
+
+.btn1 {
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.btn2 {
+  all: unset;
+}
