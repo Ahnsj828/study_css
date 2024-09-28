@@ -20,16 +20,6 @@
   }
 }
 
-span {
-  position: absolute;
-  right: 3%;
-  bottom: 5%;
-  color: #dcdcdc;
-}
-.link {
-  right: 30%;
-}
-
 .terminal-loader {
   border: 0.1em solid #333;
   background-color: #1a1a1a;
@@ -98,4 +88,15 @@ span {
   animation: typeAndDelete 4s steps(11) infinite,
     blinkCursor 0.5s step-end infinite alternate;
   margin-top: 1.5em;
+}
+
+/* 출처 */
+span {
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+  color: #dcdcdc;
+}
+.link {
+  right: 30%;
 }
