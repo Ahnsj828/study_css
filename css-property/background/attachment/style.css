@@ -1,0 +1,74 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 기본 스타일 */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px;
+  padding: 50px 200px;
+  background-color: rgb(46, 45, 65);
+  height: 100vh;
+}
+
+/* 공통 스타일 */
+.scroll,
+.fixed {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow-y: scroll;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  padding: 30px;
+}
+
+.lorem {
+  color: white;
+}
+
+.scroll-div {
+  width: 100%;
+  height: 30%;
+  .bg-scroll {
+    background-image: url("./img/scroll-bg.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.fixed-div {
+  width: 100%;
+  height: 30%;
+}
+
+.bg-fixed {
+  background-image: url("./img/fixed-bg.jpg");
+  background-attachment: fixed; /* 배경 고정 */
+  background-repeat: no-repeat; /* 반복 없음 */
+  background-size: cover; /* 이미지가 영역에 맞게 채워지도록 설정 */
+  background-position: center; /* 배경 이미지의 기본 위치 */
+  width: 100%;
+  height: 100%; /* 고정된 높이에 따라 조정 */
+}
