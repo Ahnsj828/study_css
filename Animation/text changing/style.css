@@ -1,24 +1,55 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* style css */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   background-color: #000;
+  font-family: "Roboto", sans-serif;
 
   .sentence {
     display: flex;
-    height: 100px;
-    overflow: hidden;
+    align-items: center;
     font-size: 50px;
-    font-family: "Roboto", sans-serif;
     color: #fff;
 
-    .word {
-      display: block;
-      height: 100%;
-      padding-left: 6px;
-      color: #faf738;
-      animation: alternate 4s infinite;
+    .word-container {
+      display: flex;
+      flex-direction: column;
+      width: 200px; /* 보이는 영역 설정 */
+      height: 58px; /* 보이는 영역 설정 */
+      overflow: hidden; /* 넘치는 부분 숨김 */
+      margin-left: 10px;
+      position: relative;
+      align-items: flex-start;
+
+      .word {
+        height: 58px;
+        color: #faf738;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        animation: alternate 7s infinite;
+      }
     }
   }
 }
@@ -47,4 +78,12 @@ body {
   100% {
     transform: translateY(-400%);
   }
+}
+
+.word.active {
+  transform: translateY(0); /* 현재 표시되는 글자 */
+}
+
+.word.exit {
+  transform: translateY(-100%); /* 위로 사라지는 글자 */
 }
