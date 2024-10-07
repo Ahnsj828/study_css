@@ -1,0 +1,12 @@
+/* get the styles for both icon*/
+@import "https://cssicon.space/css/icons.css";
+
+.icon,
+.icon:before,
+.icon:after,
+.icon i,
+.icon i:before,
+.icon i:after {
+  transition: all 0.4s ease;
+}
+/* this is merely a rough demo to showcase the potential of CSS ICON on animation, more crafted animation can go from here */

@@ -1,0 +1,97 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* style css */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+  font-family: "Roboto", sans-serif;
+
+  .sentence {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    color: #fff;
+
+    .word-container {
+      display: flex;
+      flex-direction: column;
+      width: 200px; /* 보이는 영역 설정 */
+      height: 58px; /* 보이는 영역 설정 */
+      overflow: hidden; /* 넘치는 부분 숨김 */
+      margin-left: 10px;
+      position: relative;
+      align-items: flex-start;
+      position: relative;
+      overflow: hidden;
+
+      .word {
+        position: absolute;
+        height: 58px;
+        color: #faf738;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        /* animation: alternate 7s infinite; */
+      }
+    }
+  }
+}
+
+.hide {
+  animation: alternate 7s infinite;
+}
+
+@keyframes alternate {
+  10% {
+    transform: translateY(-102%);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  35% {
+    transform: translateY(-202%);
+  }
+  50% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-302%);
+  }
+  75% {
+    transform: translateY(-300%);
+  }
+  85% {
+    transform: translateY(-402%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
+.word.active {
+  transform: translateY(0); /* 현재 표시되는 글자 */
+}
+
+.word.exit {
+  transform: translateY(-100%); /* 위로 사라지는 글자 */
+}

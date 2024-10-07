@@ -1,0 +1,178 @@
+/* Ambient Demo Styles
+-------------------------------------------------------------- */
+
+body {
+  font-family: "open sans", "helvetica neue", sans-serif;
+  text-align: center;
+  background: #eee radial-gradient(circle, #fff, #bbb) fixed;
+}
+h2 {
+  color: #444;
+  font-size: 38px;
+  font-weight: 300;
+  margin-top: 40px;
+  line-height: 40px;
+}
+h2 small {
+  display: block;
+  font-size: 10px;
+  font-weight: normal;
+  letter-spacing: 3.5px;
+  color: #aaa;
+}
+hr {
+  margin: 30px auto;
+  width: 30px;
+  border: none;
+  height: 2px;
+  background: #ddd;
+}
+
+/* Shared Icon Styles
+-------------------------------------------------------------- */
+.cssicon {
+  transition: all 0.5s ease;
+  background: #333;
+  border-radius: 0.1em;
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  /* adjust font size to scale */
+  font-size: 24px;
+}
+.cssicon:hover {
+  background: #000;
+}
+.cssicon:focus {
+  outline: none;
+}
+
+.cssicon span,
+.cssicon span:before,
+.cssicon span:after {
+  border-radius: 0.025em;
+  border: 0em solid #bbb;
+  background-color: #bbb;
+  height: 0.1em;
+  display: block;
+  transition: all 0.3s ease;
+  transition-property: top, bottom, left, right, transform, border-radius;
+}
+.cssicon span {
+  top: 1em;
+  left: 0.5em;
+  width: 1em;
+  position: relative;
+  background: transparent;
+}
+.cssicon span:after,
+.cssicon span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+}
+
+/* Individual Icon Styles
+-------------------------------------------------------------- */
+.minus span {
+  /* default */
+}
+
+.plus span:before {
+  transform: rotate(90deg);
+}
+
+.hamburger span {
+  background-color: #aaa;
+}
+.hamburger span:before {
+  top: -0.33em;
+}
+.hamburger span:after {
+  top: 0.33em;
+}
+
+.close span:before {
+  transform: rotate(45deg);
+}
+.close span:after {
+  transform: rotate(-45deg);
+}
+
+.down span {
+  width: 0.8em;
+  left: 0.6em;
+}
+.down span:before {
+  left: -0.25em;
+  transform: rotate(45deg);
+}
+.down span:after {
+  right: -0.25em;
+  transform: rotate(-45deg);
+}
+
+.up span {
+  width: 0.8em;
+  left: 0.6em;
+}
+.up span:before {
+  left: 0.25em;
+  transform: rotate(45deg);
+}
+.up span:after {
+  right: 0.25em;
+  transform: rotate(-45deg);
+}
+
+.right span {
+  width: 0.8em;
+  left: 0.7em;
+}
+.right span:before {
+  top: -0.25em;
+  transform: rotate(45deg);
+}
+.right span:after {
+  bottom: -0.25em;
+  transform: rotate(-45deg);
+}
+
+.left span {
+  width: 0.8em;
+}
+.left span:before {
+  top: 0.25em;
+  transform: rotate(45deg);
+}
+.left span:after {
+  bottom: 0.25em;
+  transform: rotate(-45deg);
+}
+
+.search span:after {
+  top: 0.33em;
+  left: 0.66em;
+  width: 0.33em;
+  transform: rotate(45deg);
+}
+.search span:before {
+  height: 0.75em;
+  width: 0.75em;
+  top: -0.5em;
+  border-radius: 50%;
+  background: transparent;
+  border-width: 0.1em;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  height: auto;
+  margin-top: 100px;
+  .link {
+    color: #b5b5b5;
+  }
+}
