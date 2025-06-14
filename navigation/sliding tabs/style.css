@@ -1,0 +1,71 @@
+body {
+  background: #edf5fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.tabs {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: white;
+  width: 600px;
+  height: 60px;
+  border-radius: 999px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 2;
+  user-select: none;
+}
+
+.slider {
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: calc(25% - 16px); /* 좌우 8px 여백 */
+  height: calc(100% - 16px); /* 위아래 8px 여백 */
+  background: #4973f3;
+  border-radius: 999px;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+/* ✅ 슬라이더 정확히 가운데 배치 (탭 너비 150px, 슬라이더 너비 134px → 중심 보정 8px) */
+#html:checked ~ .slider {
+  transform: translateX(8px);
+}
+#css:checked ~ .slider {
+  transform: translateX(calc(150px + 8px));
+}
+#javascript:checked ~ .slider {
+  transform: translateX(calc(300px + 8px));
+}
+#react:checked ~ .slider {
+  transform: translateX(calc(450px + 8px));
+}
+
+/* 선택된 탭 텍스트 색상 */
+#html:checked ~ label[for="html"],
+#css:checked ~ label[for="css"],
+#javascript:checked ~ label[for="javascript"],
+#react:checked ~ label[for="react"] {
+  color: white;
+  font-weight: 600;
+}
