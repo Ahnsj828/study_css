@@ -1,0 +1,23 @@
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.text {
+  font-size: 100px;
+  font-weight: bold;
+  background-image: url(./fire.jpg);
+  background-size: center;
+  background-position: center;
+
+  /* 텍스트에만 배경 보이게 처리 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  /* 크롬 브라우저 등에서 필수 */
+  -webkit-text-fill-color: transparent;
+}
