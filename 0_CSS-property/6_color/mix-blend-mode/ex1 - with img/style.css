@@ -1,0 +1,23 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+img {
+  mix-blend-mode: multiply;
+  height: 100vh;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  mix-blend-mode: difference;
+  font-size: 100vh;
+}
