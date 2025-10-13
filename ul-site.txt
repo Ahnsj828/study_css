@@ -1,0 +1,15 @@
+🎨 사람들이 만든 다양한 ‘스타일/코드/UI’를 모아둔 대표 사이트들
+사이트 이름	설명	주소
+🧠 CodePen	사람들이 만든 HTML/CSS/JS 실험작, 애니메이션, 버튼, 카드, UI 등을 바로 실행·수정 가능.	https://codepen.io
+
+⚙️ CSS-Tricks Almanac	CSS 속성, 효과, 스타일 관련 예제와 설명 모음집 (개발자용 참고서 스타일).	https://css-tricks.com/almanac/
+
+💡 Uiverse.io	전 세계 개발자들이 만든 버튼·입력창·카드 등 CSS 디자인만 모아둔 사이트. 바로 CSS 복붙 가능.	https://uiverse.io
+
+💾 CodeMyUI	애니메이션 중심의 UI/UX 인터랙션 예제 모음 (HTML/CSS/JS 코드 바로 제공).	https://codemyui.com
+
+🧑‍💻 CodeSandbox	CodePen보다 더 강력한 실행형 코드 샌드박스. React, Vue, Node 등도 실행 가능.	https://codesandbox.io
+
+💫 Dribbble	디자이너들이 만든 UI 시각 디자인 시안 모음 (코드는 없음, 비주얼 참고용).	https://dribbble.com
+
+✨ UIverse (GitHub)	CSS 컴포넌트를 모은 오픈소스 프로젝트 버전 (GitHub로도 접근 가능).	https://github.com/vaibhav111tandon/uiverse
